@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lifecycle';
+
+  c=0;
+  inc(){
+    this.c++;
+  }
+
+  constructor(){
+    console.log('app constructor called');
+  }
 }
